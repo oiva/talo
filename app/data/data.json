@@ -6,9 +6,123 @@
       "address": "Hösmärinkuja 1 J, 02760 Espoo",
       "neighborhood": "Suna",
       "map": {
-        "lat": 60.19792,
-        "lon": 24.67335,
-        "zoom": 18
+        "lat": 60.19788,
+        "lon": 24.67328,
+        "zoom": 18,
+        "services": {
+          "bus": [
+            {
+              "name": "Saarnimäenkuja",
+              "lat": 60.19791,
+              "lon": 24.66952,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2613003.html",
+              "lines": {
+                "19": "Tuomarilan asema",
+                "156": "Kamppi"
+              }
+            },
+            {
+              "name": "Saarnimäenkuja",
+              "lat": 60.19772,
+              "lon": 24.66925,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2613004.html",
+              "lines": {
+                "19": "Tapiola",
+                "156": "Tuomarila"
+              }
+            },
+            {
+              "name": "Kalliorinne",
+              "lat": 60.19520,
+              "lon": 24.66344,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2615239.html",
+              "lines": {
+                "31": "Friisilänaukio",
+                "42": "Soukka",
+                "46": "Hyljelahti",
+                "154": "Kamppi",
+                "154N": "Kamppi",
+                "154T": "Kamppi",
+                "156": "Kamppi"
+              }
+            },
+            {
+              "name": "Kalliorinne",
+              "lat": 60.19541,
+              "lon": 24.66349,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2615236.html",
+              "lines": {
+                "31": "Jorvi",
+                "42": "Jorvi",
+                "46": "Espoon keskus",
+                "154": "Tuomarila",
+                "154N": "Tuomarila",
+                "154T": "Tuomarila",
+                "156": "Tuomarila"
+              }
+            },
+            {
+              "name": "Kirstintie 7",
+              "lat": 60.20117,
+              "lon": 24.66709,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2613001.html",
+              "lines": {
+                "18": "Tapiola",
+                "19": "Tuomarilan asema",
+                "154": "Tuomarila",
+                "154N": "Tuomarila",
+                "154T": "Tuomarila",
+                "213": "Elielinaukio",
+                "213N": "Elielinaukio",
+                "270": "Kuurinniitty",
+                "270N": "Kuurinniitty"
+              }
+            },
+            {
+              "name": "Kirstintie 4",
+              "lat": 60.20104,
+              "lon": 24.66628,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2613000.html",
+              "lines": {
+                "18": "Kauklahti",
+                "19": "Tapiola",
+                "154": "Kamppi",
+                "154N": "Kamppi",
+                "154T": "Kamppi",
+                "213": "Kauklahti",
+                "213N": "Kauklahti",
+                "270": "Elielinaukio",
+                "270N": "Elielinaukio"
+              }
+            }
+          ],
+          "Juna": [
+            {
+              "name": "Tuomarila",
+              "lat": 60.20607,
+              "lon": 24.68075,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2612551.html",
+              "lines": {
+                "E": "Helsinki",
+                "L": "Helsinki",
+                "S": "Helsinki",
+                "U": "Helsinki"
+              }
+            },
+            {
+              "name": "Espoo",
+              "lat": 60.20514,
+              "lon": 24.65697,
+              "url": "http://aikataulut.reittiopas.fi/pysakit/fi/2611552.html",
+              "lines": {
+                "E": "Helsinki",
+                "L": "Helsinki",
+                "S": "Helsinki",
+                "U": "Helsinki"
+              }
+            }
+          ]
+        }
       }
     }
   ]
