@@ -1,0 +1,15 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "name": "Hösmärinkuja 1 J",
+      "address": "Hösmärinkuja 1 J, 02760 Espoo",
+      "neighborhood": "Suna",
+      "map": {
+        "lat": 60.19792,
+        "lon": 24.67335,
+        "zoom": 18
+      }
+    }
+  ]
+}
