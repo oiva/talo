@@ -150,6 +150,91 @@
                 "La": "7-18",
                 "Su": "12-18"
               }
+            },
+            {
+              "name": "K-supermarket Kulinaari",
+              "lat": 60.20408,
+              "lon": 24.65649,
+              "description": {
+                "Ma-Pe": "7-21",
+                "La": "7-18",
+                "Su": "12-18"
+              }
+            }
+          ],
+          "daycare": [
+            {
+              "name": "Hösmärin päiväkoti",
+              "lat": 60.19827,
+              "lon": 24.67177,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/HosmariTuomarilan_alue/Hosmarin_paivakoti"
+            },
+            {
+              "name": "Hösmärinpuiston päiväkoti",
+              "lat": 60.19944,
+              "lon": 24.67579,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/HosmariTuomarilan_alue/Hosmarinpuiston_paivakoti"
+            },
+            {
+              "name": "Kirstin päiväkoti",
+              "lat": 60.20153,
+              "lon": 24.66990,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/Suvelan_alue/Kirstin_paivakoti"
+            },
+            {
+              "name": "Saarniraivion päiväkoti",
+              "lat": 60.19763,
+              "lon": 24.66459,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/Suvelan_alue/Saarniraivion_paivakoti"
+            },
+            {
+              "name": "Sokinvuoren päiväkoti",
+              "lat": 60.19966,
+              "lon": 24.66923,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/Suvelan_alue/Sokinvuoren_paivakoti"
+            }
+          ],
+          "primary-schools": [
+            {
+              "name": "Hösmärinpuiston koulu",
+              "lat": 60.19924,
+              "lon": 24.67574,
+              "description": {
+                "Luokat": "0-2"
+              },
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Alakoulut/Hosmarinpuiston_koulu"
+            },
+            {
+              "name": "Jalavapuiston koulu",
+              "lat": 60.19710,
+              "lon": 24.66562,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Alakoulut/Jalavapuiston_koulu"
+            },
+            {
+              "name": "Kirstin koulu",
+              "lat": 60.20153,
+              "lon": 24.66985,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Alakoulut/Kirstin_koulu"
+            },
+            {
+              "name": "Sunan koulu",
+              "lat": 60.19666,
+              "lon": 24.67931,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Alakoulut/Sunan_koulu"
+            },
+            {
+              "name": "Tuomarilan koulu",
+              "lat": 60.20171,
+              "lon": 24.68371,
+              "url": "http://www.espoo.fi/tuomarilankoulu"
+            }
+          ],
+          "middle-schools": [
+            {
+              "name": "Saarnilaakson koulu",
+              "lat": 60.19565,
+              "lon": 24.66776,
+              "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Ylakoulut/Saarnilaakson_koulu"
             }
           ]
         }

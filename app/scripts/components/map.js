@@ -101,6 +101,10 @@ var MapView = React.createClass({
       _.each(service.description, function(value, key) {
         html += `${key}: ${value}<br/>`
       });
+      html += '</p>';
+      if (typeof service.url !== 'undefined') {
+        html += `<p><a href="${service.url}" target="_blank">Kotisivu</a></p>`;
+      }
     }
     
     return html;
@@ -115,7 +119,10 @@ var MapControls = React.createClass({
   serviceNames: {
     'bus': 'Bussit',
     'train': 'Juna',
-    'shops': 'Ruokakaupat'
+    'shops': 'Ruokakaupat',
+    'daycare': 'Päiväkodit',
+    'primary-schools': 'Alakoulut',
+    'middle-schools': 'Ylä-asteet'
   },
 
   showService: function(event) {

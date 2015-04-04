@@ -177,7 +177,6 @@ gulp.task('extras', function () {
 
 // Watch
 gulp.task('watch', ['html', 'bundle'], function () {
-    compile(true);
     browserSync({
         notify: false,
         logPrefix: 'BS',
