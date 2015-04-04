@@ -71,10 +71,20 @@ var MapView = React.createClass({
     var group = new L.layerGroup();
 
     _.each(services, function(service) {
-      var marker = L.marker([service.lat, service.lon]).bindPopup(service.name);
+      var popup = this.getPopup(service);
+      var marker = L.marker([service.lat, service.lon]).bindPopup(popup);
       group.addLayer(marker);
-    });
+    }.bind(this));
     return group;
+  },
+
+  getPopup: function(service) {
+    var html = `<strong>${service.name}</strong><p>`;
+    _.each(service.lines, function(value, key) {
+      html += `${key} → ${value}<br/>`
+    });
+    html += `</p><p><a href="${service.url}" target="_blank">Aikataulut</a></p>`;
+    return html;
   },
 
   render: function() {
@@ -105,12 +115,14 @@ var MapControls = React.createClass({
     console.log('serviceTypes', serviceTypes);
 
     return (
-      <div>
-        <h2>Talo kartalla</h2>
-        <MapView map={this.props.map} ref='map' />
+      <div className="row">
+        <div className="col-md-12 col-sm-12">
+          <h2>Talo kartalla</h2>
+          <MapView map={this.props.map} ref='map' />
 
-        <h3>Lähialueen palvelut</h3>
-        <ul>{serviceTypes}</ul>
+          <h3>Lähialueen palvelut</h3>
+          <ul>{serviceTypes}</ul>
+        </div>
       </div>
     );
   }

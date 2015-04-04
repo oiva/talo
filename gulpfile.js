@@ -177,7 +177,7 @@ gulp.task('extras', function () {
 
 // Watch
 gulp.task('watch', ['html', 'bundle'], function () {
-
+    compile(true);
     browserSync({
         notify: false,
         logPrefix: 'BS',
@@ -200,8 +200,6 @@ gulp.task('watch', ['html', 'bundle'], function () {
 
     // Watch image files
     gulp.watch('app/images/**/*', reload);
-
-    compile(true);
 });
 
 // Build

@@ -34,8 +34,8 @@ var HouseView = React.createClass({
     var name = this.state.house.name;
 
     return (
-      <div className="house row">
-        <header className="header">
+      <div className="house">
+        <header className="header row">
           <h1>{ name }</h1>
         </header>
 
