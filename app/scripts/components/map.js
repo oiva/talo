@@ -130,7 +130,8 @@ var MapControls = React.createClass({
     'shops': 'Ruokakaupat',
     'daycare': 'Päiväkodit',
     'primary-schools': 'Alakoulut',
-    'middle-schools': 'Yläkoulut'
+    'middle-schools': 'Yläkoulut',
+    'health': 'Terveys- ja sosiaalipalvelut'
   },
 
   showService: function(event) {

@@ -248,6 +248,29 @@
               "lon": 24.66776,
               "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Perusopetus/Peruskoulut/Ylakoulut/Saarnilaakson_koulu"
             }
+          ],
+          "health": [
+            {
+              "name": "Suvelan lastentalo, Äitiys- ja lastenneuvola",
+              "lat": 60.20140,
+              "lon": 24.67149
+            },
+            {
+              "name": "Espoon keskuksen perheneuvola",
+              "lat": 60.20362,
+              "lon": 24.65465
+            },
+            {
+              "name": "Kiltakallion lastentalo, Äitiys- ja lastenneuvola",
+              "lat": 60.19916,
+              "lon": 24.65975
+            },
+            {
+              "name": "Samarian terveysasema",
+              "lat": 60.20199,
+              "lon": 24.65422,
+              "url": "http://www.espoo.fi/fi-FI/Sosiaali_ja_terveyspalvelut/Terveyspalvelut/Terveysasemat/Samarian_terveysasema__Espoon_keskus"
+            }
           ]
         }
       }
