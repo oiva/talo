@@ -106,8 +106,16 @@ var MapView = React.createClass({
         html += `<p><a href="${service.url}" target="_blank">Kotisivu</a></p>`;
       }
     }
+
+    html += '<p>Etäisyys ' + this.getDistance(service) + 'm</p>';
     
     return html;
+  },
+
+  getDistance: function(service) {
+    var a = L.latLng(this.props.map.lat, this.props.map.lon);
+    var b = L.latLng(service.lat, service.lon);
+    return Math.round(a.distanceTo(b) * 0.1) * 10;
   },
 
   render: function() {

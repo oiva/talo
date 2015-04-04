@@ -192,6 +192,18 @@
               "lat": 60.19966,
               "lon": 24.66923,
               "url": "http://www.espoo.fi/fi-FI/Paivahoito_ja_koulutus/Paivahoito/Paivakodit/Kunnalliset_paivakodit/Espoon_keskus/Suvelan_alue/Sokinvuoren_paivakoti"
+            },
+            {
+              "name": "Honey Monsters",
+              "lat": 60.20119,
+              "lon": 24.68191,
+              "url": "http://www.honeymonsters.fi/Yhteystiedot/"
+            },
+            {
+              "name": "Päiväkoti Pellava",
+              "lat": 60.20140,
+              "lon": 24.67149,
+              "url": "http://www.kolumbus.fi/paivakoti.pellava/index.htm"
             }
           ],
           "primary-schools": [
