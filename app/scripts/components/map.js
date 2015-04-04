@@ -5,7 +5,7 @@ var React = require('react'),
     _ = require('lodash'),
     $ = jQuery;
 
-var Map = React.createClass({
+var MapView = React.createClass({
   layers: {},
 
   createMap: function(element) {
@@ -30,7 +30,7 @@ var Map = React.createClass({
 
   setupMap: function () {
     if (typeof this.props.map === 'undefined') {
-      return
+      return;
     }
     console.log('setup map');
     this.map.setView([this.props.map.lat, this.props.map.lon], this.props.map.zoom);
@@ -38,7 +38,7 @@ var Map = React.createClass({
 
   showLayer: function(serviceType) {
     /* clear old layers */
-    _.each(this.layers, function(layer, key) {
+    _.each(this.layers, function(layer) {
       this.map.removeLayer(layer);
     }.bind(this));
 
@@ -68,7 +68,6 @@ var Map = React.createClass({
 
   getLayer: function(serviceType) {
     var services = this.props.map.services[serviceType];
-    var markers = [];
     var group = new L.layerGroup();
 
     _.each(services, function(service) {
@@ -79,13 +78,13 @@ var Map = React.createClass({
   },
 
   render: function() {
-    return (<div className="map"></div>);
+    return (<div className='map'></div>);
   }
 });
 
 var MapControls = React.createClass({
   serviceNames: {
-    "bus": "Bussit"
+    'bus': 'Bussit'
   },
 
   showService: function(event) {
@@ -100,7 +99,7 @@ var MapControls = React.createClass({
         name = this.serviceNames[k];
       }
       return (
-        <li key={k}><a data-key={k} href="#" onClick={this.showService}>{name}</a></li>
+        <li key={k}><a data-key={k} href='#' onClick={this.showService}>{name}</a></li>
       );
     }.bind(this));
     console.log('serviceTypes', serviceTypes);
@@ -108,7 +107,7 @@ var MapControls = React.createClass({
     return (
       <div>
         <h2>Talo kartalla</h2>
-        <Map map={this.props.map} ref="map" />
+        <MapView map={this.props.map} ref='map' />
 
         <h3>Lähialueen palvelut</h3>
         <ul>{serviceTypes}</ul>

@@ -5,7 +5,7 @@ var React = require('react'),
     actions = require('../actions/actions'),
     housesStore = require('../stores/housesStore'),
 
-    Map = require('../components/map');
+    MapView = require('../components/map');
 
 var HouseView = React.createClass({
 
@@ -39,7 +39,7 @@ var HouseView = React.createClass({
           <h1>{ name }</h1>
         </header>
 
-        <Map map={this.state.house.map} />
+        <MapView map={this.state.house.map} />
       </div>
     )
   }

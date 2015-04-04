@@ -4,27 +4,29 @@ var Reflux = require('reflux'),
     $ = jQuery,
     _ = require('lodash');
 
+
 var Actions = Reflux.createActions({
   search: {asyncResult: true}
-})
-
-Actions.search.listen(function(houseId) {
-  console.log('search house '+houseId);
-  getHouseItem.call(this, houseId);
 });
 
-function getHouseItem(houseId) {
+function getHouseItem(houseId, context) {
   console.log('load data');
   $.ajax({
-    url: '../data/data.json'
+    url: 'scripts/json/data.json'
   })
     .done(function(data) {
       var house = _.find(data.houses, function(house) {
-        return house.id == houseId;
+        return house.id === houseId;
       });
       this.completed(house);
-    }.bind(this))
-    .fail(this.failed);
-};
+    }.bind(context))
+    .fail(context.failed);
+}
+
+Actions.search.listen(function(houseId) {
+  console.log('search house '+houseId);
+  console.log(Actions.getHouseItem);
+  getHouseItem(houseId, this);
+});
 
 module.exports = Actions;

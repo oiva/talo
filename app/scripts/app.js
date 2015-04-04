@@ -12,7 +12,7 @@ var HouseApp = React.createClass({
   componentDidMount: function() {},
   render: function() {
     return (
-      <House id="1" />
+      <House id='1' />
     );
   }
 });
