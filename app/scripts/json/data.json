@@ -96,7 +96,7 @@
               }
             }
           ],
-          "Juna": [
+          "train": [
             {
               "name": "Tuomarila",
               "lat": 60.20607,
@@ -119,6 +119,36 @@
                 "L": "Helsinki",
                 "S": "Helsinki",
                 "U": "Helsinki"
+              }
+            }
+          ],
+          "shops": [
+            {
+              "name": "Alepa",
+              "lat": 60.20049,
+              "lon": 24.66985,
+              "description": {
+                "Ma-La": "7-23",
+                "Su": "10-23"
+              }
+            },
+            {
+              "name": "K-market",
+              "lat": 60.20038,
+              "lon": 24.67012,
+              "description": {
+                "Ma-La": "7-22",
+                "Su": "9-22"
+              }
+            },
+            {
+              "name": "S-market",
+              "lat": 60.20372,
+              "lon": 24.66060,
+              "description": {
+                "Ma-Pe": "7-21",
+                "La": "7-18",
+                "Su": "12-18"
               }
             }
           ]

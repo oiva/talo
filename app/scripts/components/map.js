@@ -7,13 +7,25 @@ var React = require('react'),
 
 var MapView = React.createClass({
   layers: {},
+  houseIcon: null,
 
   createMap: function(element) {
+    this.houseIcon = new L.Icon({
+      
+        shadowUrl: 'images/leaflet/house-shadow.png',
+        iconUrl: 'images/leaflet/house-2x.png',
+        iconSize:     [25, 40],
+        shadowSize:   [39, 24],
+        iconAnchor:   [12, 40],
+        shadowAnchor: [10, 24],
+        popupAnchor:  [0, 0]
+    });
+
     this.map = L.map(element);
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(this.map);
-      L.marker([this.props.map.lat, this.props.map.lon]).addTo(this.map);
+      L.marker([this.props.map.lat, this.props.map.lon], {icon: this.houseIcon}).addTo(this.map);
     return this.map;
   },
 
@@ -71,19 +83,26 @@ var MapView = React.createClass({
     var group = new L.layerGroup();
 
     _.each(services, function(service) {
-      var popup = this.getPopup(service);
+      var popup = this.getPopup(service, serviceType);
       var marker = L.marker([service.lat, service.lon]).bindPopup(popup);
       group.addLayer(marker);
     }.bind(this));
     return group;
   },
 
-  getPopup: function(service) {
+  getPopup: function(service, type) {
     var html = `<strong>${service.name}</strong><p>`;
-    _.each(service.lines, function(value, key) {
-      html += `${key} → ${value}<br/>`
-    });
-    html += `</p><p><a href="${service.url}" target="_blank">Aikataulut</a></p>`;
+    if (type === 'bus' || type === 'train') {
+      _.each(service.lines, function(value, key) {
+        html += `${key} → ${value}<br/>`
+      });
+      html += `</p><p><a href="${service.url}" target="_blank">Aikataulut</a></p>`;
+    } else {
+      _.each(service.description, function(value, key) {
+        html += `${key}: ${value}<br/>`
+      });
+    }
+    
     return html;
   },
 
@@ -94,7 +113,9 @@ var MapView = React.createClass({
 
 var MapControls = React.createClass({
   serviceNames: {
-    'bus': 'Bussit'
+    'bus': 'Bussit',
+    'train': 'Juna',
+    'shops': 'Ruokakaupat'
   },
 
   showService: function(event) {
