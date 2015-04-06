@@ -87,7 +87,7 @@ gulp.task('scripts', function () {
         cache: {},
         packageCache: {},
         fullPaths: true
-    }));
+    }).transform(babelify));
 
     bundler.on('update', rebundle);
 
@@ -191,7 +191,7 @@ gulp.task('watch', ['html', 'bundle', 'json'], function () {
         server: ['dist', 'app']
     });
 
-    gulp.watch('app/scripts/**/*.js', ['jshint', 'compile', reload]);
+    gulp.watch('app/scripts/**/*.js', ['jshint', 'scripts', reload]);
 
     // Watch .json files
     gulp.watch('app/scripts/**/*.json', ['json']);
