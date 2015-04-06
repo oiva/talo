@@ -44,7 +44,6 @@ var MapView = React.createClass({
     if (typeof this.props.map === 'undefined') {
       return;
     }
-    console.log('setup map');
     this.map.setView([this.props.map.lat, this.props.map.lon], this.props.map.zoom);
   },
 
@@ -149,7 +148,6 @@ var MapControls = React.createClass({
         <li key={k}><a data-key={k} href='#' onClick={this.showService}>{name}</a></li>
       );
     }.bind(this));
-    console.log('serviceTypes', serviceTypes);
 
     return (
       <div className="row">

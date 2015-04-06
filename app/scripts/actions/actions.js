@@ -10,7 +10,6 @@ var Actions = Reflux.createActions({
 });
 
 function getHouseItem(houseId, context) {
-  console.log('load data');
   $.ajax({
     url: 'scripts/json/data.json'
   })
@@ -24,8 +23,6 @@ function getHouseItem(houseId, context) {
 }
 
 Actions.search.listen(function(houseId) {
-  console.log('search house '+houseId);
-  console.log(Actions.getHouseItem);
   getHouseItem(houseId, this);
 });
 

@@ -13,7 +13,6 @@ var housesStore = Reflux.createStore({
   },
 
   onSearchCompleted: function(data) {
-    console.log('onSearchCompleted', data);
     this.trigger(data);
   }
 });

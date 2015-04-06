@@ -12,8 +12,29 @@
             "Asuntoon saa Internetin kahdella eri tavalla:",
             "- Elisan ADSL: teoreettinen maksiminopeus on 24Mbps, mutta käytännössä läpi tulee n. 10-15Mbps.",
             "- Soneran 4G-verkko. Mokkulan kautta saa n. 50Mbps yhteyden.",
-            "Näiden lisäksi olemme kokeilleet myös Elisan 4G:tä keväällä 2014, mutta se ei taloomme kuulunut. Tilanne voi olla muuttunut."
+            "Näiden lisäksi olemme kokeilleet myös Elisan 4G:tä keväällä 2014, mutta se ei taloomme kuulunut. Tilanne voi toki olla muuttunut."
           ]
+        },
+        {
+          "title": "Miten löydät perille",
+          "text": [
+            "Autolla Espoonväylän / Finnoontien suunnasta: käänny Hösmärintielle (kyltissä lukee Suvela ja Suna). Aja Hösmärintien päähän ja käänny oikealle niin monesti, että päädyt Hösmärinkujalle. Hösmärinkuja 1 on ensimmäisenä oikealla. Pihassa on tien puoleisessa päädyssä kaksi vieraspaikkaa. Voit myös jättää autosi Hösmärintielle (24h parkki) ja oikaista pihan poikki.",
+            "Bussilla: bussilla 156 pääsee lähimmäksi kun jää pois Saarnimäenkujan pysäkillä."
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "title": "Perustiedot",
+          "data": {
+            "Sijainti": "Hösmärinkuja 1 J",
+            "Kaupunginosa": "Espoon keskus / Suna",
+            "Asuinpinta-ala": "77,5m²"
+          }
+        },
+        {
+          "title": "Remontit",
+          "data": {}
         }
       ],
       "map": {
@@ -281,6 +302,12 @@
               "lat": 60.20199,
               "lon": 24.65422,
               "url": "http://www.espoo.fi/fi-FI/Sosiaali_ja_terveyspalvelut/Terveyspalvelut/Terveysasemat/Samarian_terveysasema__Espoon_keskus"
+            },
+            {
+              "name": "Jorvin sairaala",
+              "lat": 60.22186,
+              "lon": 24.68798,
+              "url": "http://www.hus.fi/sairaanhoito/sairaalat/jorvin-sairaala/Sivut/default.aspx"
             }
           ]
         }

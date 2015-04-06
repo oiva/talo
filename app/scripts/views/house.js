@@ -8,6 +8,7 @@ var React = require('react'),
     housesStore = require('../stores/housesStore'),
 
     MapView = require('../components/map'),
+    TableView = require('../components/table'),
     TopicView = require('../components/topic');
 
 var HouseView = React.createClass({
@@ -34,15 +35,21 @@ var HouseView = React.createClass({
       return <div></div>;
     }
 
-    console.log(this.state.house);
-
     var name = this.state.house.name;
+    var tables = '';
     var topics = '';
+
+    if (typeof this.state.house.tables !== 'undefined'
+      && this.state.house.tables.length > 0) {
+      tables = _.map(this.state.house.tables, function(table, i) {
+        return <TableView key={i} title={table.title} data={table.data} />;
+      });
+    }
 
     if (typeof this.state.house.topics !== 'undefined'
       && this.state.house.topics.length > 0) {
-      topics = _.map(this.state.house.topics, function(topic) {
-        return <TopicView topic={topic} />;
+      topics = _.map(this.state.house.topics, function(topic, i) {
+        return <TopicView key={i} topic={topic} />;
       });
     }
 
@@ -53,6 +60,8 @@ var HouseView = React.createClass({
             <h1>{name}</h1>
           </header>
         </div>
+
+        {tables}
 
         {topics}
 
