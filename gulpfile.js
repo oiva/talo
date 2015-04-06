@@ -41,15 +41,15 @@ gulp.task('styles', function () {
 });
 
 function compile(watch) {
-  var bundler = watchify(
-    browserify(
-        sourceFile,
-        {
-            debug: true
-        }
-    ).transform(babelify));
+    var bundler = watchify(
+        browserify(
+            sourceFile,
+            {
+                debug: true
+            }
+        ).transform(babelify));
  
-  function rebundle() {
+    function rebundle() {
         bundler.bundle()
           .on('error', function(err) { console.error(err); this.emit('end'); })
           .pipe(source(destFileName))
@@ -73,6 +73,10 @@ function compile(watch) {
 
 gulp.task('compile', function() {
     return compile();
+});
+
+gulp.task('update', function() {
+    return compile(true);
 });
 
 // Scripts
@@ -176,9 +180,9 @@ gulp.task('extras', function () {
 });
 
 // Watch
-gulp.task('watch', ['html', 'bundle'], function () {
+gulp.task('watch', ['html', 'bundle', 'json'], function () {
     browserSync({
-        notify: false,
+        notify: true,
         logPrefix: 'BS',
         // Run as an https by uncommenting 'https: true'
         // Note: this uses an unsigned certificate which on first access

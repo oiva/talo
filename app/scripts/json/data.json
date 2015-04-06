@@ -5,6 +5,17 @@
       "name": "Hösmärinkuja 1 J",
       "address": "Hösmärinkuja 1 J, 02760 Espoo",
       "neighborhood": "Suna",
+      "topics": [
+        {
+          "title": "Internet",
+          "text": [
+            "Asuntoon saa Internetin kahdella eri tavalla:",
+            "- Elisan ADSL: teoreettinen maksiminopeus on 24Mbps, mutta käytännössä läpi tulee n. 10-15Mbps.",
+            "- Soneran 4G-verkko. Mokkulan kautta saa n. 50Mbps yhteyden.",
+            "Näiden lisäksi olemme kokeilleet myös Elisan 4G:tä keväällä 2014, mutta se ei taloomme kuulunut. Tilanne voi olla muuttunut."
+          ]
+        }
+      ],
       "map": {
         "lat": 60.19788,
         "lon": 24.67328,
