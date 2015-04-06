@@ -29,12 +29,47 @@
           "data": {
             "Sijainti": "Hösmärinkuja 1 J",
             "Kaupunginosa": "Espoon keskus / Suna",
-            "Asuinpinta-ala": "77,5m²"
+            "Asuinpinta-ala": "77,5m²",
+            "Kuvaus": "3h, k, kph, s, WC",
+            "Kunto": "Hyvä",
+            "Vapautuminen": "1kk kaupanteosta / sopimuksen mukaan",
+            "Keittiön varusteet": "Liesi, liesituuletin, jääkaappi/pakastin, astianpesukone",
+            "Parveke": "Ei. Makuuhuoneessa ranskalainen parveke",
+            "Kylpyhuoneen varusteet": "Sauna, kylpyhuone, erillinen wc, suihku, pesukoneliitäntä, lattialämmitys",
+            "Säilytystilat": "Makuuhuoneissa kaapistot, ulkovarasto",
+            "Ikkunoiden suunta": "Etelä, pohjoinen",
+            "Asumistyyppi": "Omistus"
           }
         },
         {
-          "title": "Remontit",
+          "title": "Hintatiedot ja muut kustannukset",
           "data": {}
+        },
+        {
+          "title": "Tehdyt remontit",
+          "data": {}
+        },
+        {
+          "title": "Tulevat remontit",
+          "data": {}
+        },
+        {
+          "title": "Talon ja tontin tiedot",
+          "data": {
+            "Rakennusvuosi": "1984",
+            "Huoneistojen lukumäärä": 10,
+            "Kiinteistön asuinpinta-ala yhteensä": "771,5m²",
+            "Yhteiset tilat": "Ulkovarasto, tekninen tila",
+            "Taloyhtiön sauna": "Ei",
+            "Pysäköintitilat": "Pihalla kymmenen tolppapaikkaa + kaksi vieraspaikkaa. Kadun varressa hyvin tilaa.",
+            "Rakennusmateriaali": "",
+            "Kattomateriaali": "",
+            "Energialuokka": "",
+            "Antennijärjestelmä": "",
+            "Tontin pinta-ala": "2306,4m²",
+            "Tontin omistus": "Oma",
+            "Lämmitys": "Kaukolämpö"
+          }
         }
       ],
       "map": {

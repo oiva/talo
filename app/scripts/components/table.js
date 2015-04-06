@@ -14,7 +14,7 @@ var TableView = React.createClass({
               {_.map(this.props.data, function(value, key) {
                 return (
                   <tr key={key}>
-                    <td>{key}</td>
+                    <th>{key}</th>
                     <td>{value}</td>
                   </tr>
                 );
