@@ -82,6 +82,9 @@ var MapView = React.createClass({
     var group = new L.layerGroup();
 
     _.each(services, function(service) {
+      if (typeof service.lat === 'undefined' || typeof service.lon === 'undefined') {
+        return;
+      }
       var popup = this.getPopup(service, serviceType);
       var marker = L.marker([service.lat, service.lon]).bindPopup(popup);
       group.addLayer(marker);
@@ -112,6 +115,9 @@ var MapView = React.createClass({
   },
 
   getDistance: function(service) {
+    if (typeof service.lat === 'undefined' || typeof service.lon === 'undefined') {
+      return 0;
+    }
     var a = L.latLng(this.props.map.lat, this.props.map.lon);
     var b = L.latLng(service.lat, service.lon);
     return Math.round(a.distanceTo(b) * 0.1) * 10;
@@ -130,12 +136,14 @@ var MapControls = React.createClass({
     'daycare': 'Päiväkodit',
     'primary-schools': 'Alakoulut',
     'middle-schools': 'Yläkoulut',
-    'health': 'Terveys- ja sosiaalipalvelut'
+    'health': 'Terveys- ja sosiaalipalvelut',
+    'pizza': 'Pizzeriat'
   },
 
   showService: function(event) {
     var service = $(event.target).data('key');
     this.refs.map.showLayer(service);
+    event.preventDefault();
   },
 
   render: function() {
