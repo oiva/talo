@@ -8,19 +8,11 @@
       "topics": [
         {
           "title": "Internet",
-          "text": [
-            "Asuntoon saa Internetin kahdella eri tavalla:",
-            "- Elisan ADSL: teoreettinen maksiminopeus on 24Mbps, mutta käytännössä läpi tulee n. 10-15Mbps.",
-            "- Soneran 4G-verkko. Mokkulan kautta saa n. 50Mbps yhteyden.",
-            "Näiden lisäksi olemme kokeilleet myös Elisan 4G:tä keväällä 2014, mutta se ei taloomme kuulunut. Tilanne voi toki olla muuttunut."
-          ]
+          "text": "Asuntoon saa Internetin kahdella eri tavalla:\n\n- Elisan ADSL: teoreettinen maksiminopeus on 24Mbps, mutta käytännössä läpi tulee n. 10-15Mbps.\n- Soneran 4G-verkko. Mokkulan kautta saa n. 50Mbps yhteyden.\n\nNäiden lisäksi olemme kokeilleet myös Elisan 4G:tä keväällä 2014, mutta se ei taloomme kuulunut. Tilanne voi toki olla muuttunut."
         },
         {
           "title": "Miten löydät perille",
-          "text": [
-            "Autolla Espoonväylän / Finnoontien suunnasta: käänny Hösmärintielle (kyltissä lukee Suvela ja Suna). Aja Hösmärintien päähän ja käänny oikealle niin monesti, että päädyt Hösmärinkujalle. Hösmärinkuja 1 on ensimmäisenä oikealla. Pihassa on tien puoleisessa päädyssä kaksi vieraspaikkaa. Voit myös jättää autosi Hösmärintielle (24h parkki) ja oikaista pihan poikki.",
-            "Bussilla: bussilla 156 pääsee lähimmäksi kun jää pois Saarnimäenkujan pysäkillä."
-          ]
+          "text": "**Autolla** Espoonväylän / Finnoontien suunnasta: käänny Hösmärintielle (kyltissä lukee Suvela ja Suna). Aja Hösmärintien päähän ja käänny oikealle niin monta kertaa, että päädyt Hösmärinkujalle. Hösmärinkuja 1 on ensimmäisenä oikealla. Pihassa on tien puoleisessa päädyssä kaksi vieraspaikkaa. Voit myös jättää autosi Hösmärintielle (24h parkki) ja oikaista pihan poikki.\n\n**Bussilla**: bussilla 156 pääsee lähimmäksi kun jää pois Saarnimäenkujan pysäkillä."
         }
       ],
       "tables": [
@@ -32,7 +24,7 @@
             "Asuinpinta-ala": "77,5m²",
             "Kuvaus": "3h, k, kph, s, WC",
             "Kunto": "Hyvä",
-            "Vapautuminen": "1kk kaupanteosta / sopimuksen mukaan",
+            "Vapautuminen": "3kk kaupanteosta / sopimuksen mukaan",
             "Keittiön varusteet": "Liesi, liesituuletin, jääkaappi/pakastin, astianpesukone",
             "Parveke": "Ei. Makuuhuoneessa ranskalainen parveke",
             "Kylpyhuoneen varusteet": "Sauna, kylpyhuone, erillinen wc, suihku, pesukoneliitäntä, lattialämmitys",
@@ -343,6 +335,23 @@
               "lat": 60.22186,
               "lon": 24.68798,
               "url": "http://www.hus.fi/sairaanhoito/sairaalat/jorvin-sairaala/Sivut/default.aspx"
+            }
+          ],
+          "pizza": [
+            {
+              "name": "Pizzeria Shine",
+              "lat": 60.20041,
+              "lon": 24.67004
+            },
+            {
+              "name": "Valentin Pizza & Burger",
+              "lat": 60.19934,
+              "lon": 24.66468
+            },
+            {
+              "name": "Kotipizza",
+              "lat": 60.20365,
+              "lon": 24.65827
             }
           ]
         }
