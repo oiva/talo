@@ -36,6 +36,8 @@ var HouseView = React.createClass({
     }
 
     var name = this.state.house.name;
+    var slogan = this.state.house.slogan;
+    var address = this.state.house.address;
     var tables = '';
     var topics = '';
 
@@ -56,8 +58,9 @@ var HouseView = React.createClass({
     return (
       <div className="house">
         <div className="row">
-          <header className="col-md-12">
+          <header className="jumbotron">
             <h1>{name}</h1>
+            <p>{slogan}</p>
           </header>
         </div>
 

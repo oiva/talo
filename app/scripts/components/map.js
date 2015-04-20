@@ -137,7 +137,8 @@ var MapControls = React.createClass({
     'primary-schools': 'Alakoulut',
     'middle-schools': 'Yläkoulut',
     'health': 'Terveys- ja sosiaalipalvelut',
-    'pizza': 'Pizzeriat'
+    'pizza': 'Pizzeriat',
+    'sport': 'Urheilu'
   },
 
   showService: function(event) {
@@ -159,7 +160,7 @@ var MapControls = React.createClass({
 
     return (
       <div className="row">
-        <div className="col-md-12 col-sm-12">
+        <div className="col-md-12 col-sm-12 map-container">
           <h2>Talo kartalla</h2>
           <MapView map={this.props.map} ref='map' />
 

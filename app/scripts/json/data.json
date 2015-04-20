@@ -2,7 +2,8 @@
   "houses": [
     {
       "id": 1,
-      "name": "Hösmärinkuja 1 J",
+      "name": "Hösmärinkuja 1",
+      "slogan": "Leppoisaa rivitaloasumista Sunassa!",
       "address": "Hösmärinkuja 1 J, 02760 Espoo",
       "neighborhood": "Suna",
       "topics": [
@@ -35,7 +36,16 @@
         },
         {
           "title": "Hintatiedot ja muut kustannukset",
-          "data": {}
+          "data": {
+            "Velaton myyntihinta": "€",
+            "Myyntihinta": "€",
+            "Neliöhinta": "/ m²",
+            "Hoitovastike": "/ kk",
+            "Rahoitusvastike": "/ kk",
+            "Yhtiövastike yhteensä": "/ kk",
+            "Vesimaksu": "",
+            "Tolppapaikka": "40€ / vuosi"
+          }
         },
         {
           "title": "Tehdyt remontit",
@@ -53,11 +63,11 @@
             "Kiinteistön asuinpinta-ala yhteensä": "771,5m²",
             "Yhteiset tilat": "Ulkovarasto, tekninen tila",
             "Taloyhtiön sauna": "Ei",
-            "Pysäköintitilat": "Pihalla kymmenen tolppapaikkaa + kaksi vieraspaikkaa. Kadun varressa hyvin tilaa.",
-            "Rakennusmateriaali": "",
-            "Kattomateriaali": "",
-            "Energialuokka": "",
-            "Antennijärjestelmä": "",
+            "Pysäköintitilat": "Pihalla kymmenen tolppapaikkaa (40€ / vuosi)  + kaksi vieraspaikkaa. Kadun varressa myös hyvin tilaa.",
+            "Rakennusmateriaali": "Puu, tiiliverhoilu",
+            "Kattom": "Harjakatto, pelti",
+            "Energialuokka": "D (Mitattu 2008)",
+            "Antennijärjestelmä": "Keskusantenni",
             "Tontin pinta-ala": "2306,4m²",
             "Tontin omistus": "Oma",
             "Lämmitys": "Kaukolämpö"
@@ -352,6 +362,43 @@
               "name": "Kotipizza",
               "lat": 60.20365,
               "lon": 24.65827
+            }
+          ],
+          "sport": [
+            {
+              "name": "Keskuspuisto",
+              "lat": 60.19308,
+              "lon": 24.68190
+            },
+            {
+              "name": "3A-Sport",
+              "lat": 60.20142,
+              "lon": 24.67178
+            },
+            {
+              "name": "Fit1",
+              "lat": 60.21026,
+              "lon": 24.65910
+            },
+            {
+              "name": "Keski-Espoon uimahalli + kuntosali",
+              "lat": 60.20992,
+              "lon": 24.65939
+            },
+            {
+              "name": "LadyFitness",
+              "lat": 60.20325,
+              "lon": 24.65805
+            },
+            {
+              "name": "Fit 24 Seven",
+              "lat": 60.20416,
+              "lon": 24.65672
+            },
+            {
+              "name": "Löfkulla Golf",
+              "lat": 60.21329,
+              "lon": 24.66103
             }
           ]
         }
