@@ -1,5 +1,9 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 
+/* colors */
+$blue: #375260;
+$blueLight: #e8f2f7;
+
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
 .browsehappy {
@@ -11,24 +15,26 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 
 /* Space out content a bit */
 body {
+    background: $blueLight;
+    color: #444;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+
 h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
+    color: $blue;
+    font-family: 'Patua One', sans-serif;
     font-weight: bold;
 }
 
 h2 {
-    border-bottom: 1px solid rgba(55, 66, 88, 0.5);
-    color: rgb(55, 66, 88);
     margin-bottom: 20px;
     margin-top: 32px;
 }
 
 th, td {
-    padding: 0 12px 3px 0;
+    padding: 0 12px 4px 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -65,12 +71,26 @@ th, td {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    background-color: RGBA(195, 214, 225, 0.4);
+    border-bottom: 0;
+    border-radius: 0;
+    border-top: 1px solid #f2f2f2;
+    margin: 10px 15px;
+    padding: 40px 50px;
+    text-align: left;
+
+    h1 {
+        color: $blue;
+    }
+    
     .btn {
         font-size: 21px;
         padding: 14px 24px;
     }
+}
+
+.container .jumbotron {
+    border-radius: 1px;
 }
 
 /* Supporting marketing content */
@@ -81,7 +101,20 @@ th, td {
     }
 }
 
+.map-container {
+    background: rgba($blue, .1);
+    border-radius: 1px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+    h2 {
+        margin-top: 0;
+    }
+}
 .map {
+    border: 1px solid rgba($blue, .1);
     height: 360px;
     width: 100%;
 }
@@ -103,10 +136,5 @@ th, td {
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
-    }
-
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
     }
 }
