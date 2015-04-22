@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react'),
-    L = require('Leaflet'),
+    L = require('leaflet'),
     _ = require('lodash'),
     $ = jQuery;
 
