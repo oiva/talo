@@ -7,6 +7,7 @@ var React = require('react'),
     actions = require('../actions/actions'),
     housesStore = require('../stores/housesStore'),
 
+    FilesView = require('../components/files'),
     MapView = require('../components/map'),
     TableView = require('../components/table'),
     TopicView = require('../components/topic');
@@ -69,6 +70,8 @@ var HouseView = React.createClass({
         {topics}
 
         <MapView map={this.state.house.map} />
+
+        <FilesView files={this.state.house.files} />
       </div>
     )
   }

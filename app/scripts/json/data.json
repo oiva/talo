@@ -74,6 +74,9 @@
           }
         }
       ],
+      "files": {
+        "Pohjapiirros": "/images/carousel/pohja.png"
+      },
       "map": {
         "lat": 60.19788,
         "lon": 24.67328,
