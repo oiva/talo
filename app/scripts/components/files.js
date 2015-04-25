@@ -14,7 +14,7 @@ var FilesView = React.createClass({
           <ul className="files">
           {_.map(this.props.files, function(value, key) {
             return (
-              <li><a href={value}>{key}</a></li>
+              <li key={key}><a href={value}>{key}</a></li>
             )
           })}
           </ul>

@@ -7,6 +7,7 @@ var React = require('react'),
     actions = require('../actions/actions'),
     housesStore = require('../stores/housesStore'),
 
+    CarouselView = require('../components/carousel'),
     FilesView = require('../components/files'),
     MapView = require('../components/map'),
     TableView = require('../components/table'),
@@ -38,7 +39,7 @@ var HouseView = React.createClass({
 
     var name = this.state.house.name;
     var slogan = this.state.house.slogan;
-    var address = this.state.house.address;
+    //var address = this.state.house.address;
     var tables = '';
     var topics = '';
 
@@ -64,6 +65,8 @@ var HouseView = React.createClass({
             <p>{slogan}</p>
           </header>
         </div>
+
+        <CarouselView photos={this.state.house.photos} />
 
         {tables}
 

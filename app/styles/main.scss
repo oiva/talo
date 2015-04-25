@@ -1,10 +1,13 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
+$slick-font-path: "/bower_components/slick-carousel/slick/fonts/";
 
 /* colors */
 $blue: #375260;
 $blueLight: #e8f2f7;
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -117,6 +120,20 @@ th, td {
     border: 1px solid rgba($blue, .1);
     height: 360px;
     width: 100%;
+}
+
+.carousel-link {
+    display: block;
+    min-height: 525px;
+}
+
+.carousel-image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-height: 525px;
+    max-width: 700px;
+    width: auto;
 }
 
 /* Responsive: Portrait tablets and up */
