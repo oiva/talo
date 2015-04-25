@@ -206,7 +206,7 @@ gulp.task('watch', ['html', 'bundle', 'json'], function () {
 });
 
 // Build
-gulp.task('build', ['html', 'bundle', 'buildBundle', 'json' 'images', 'extras'], function() {
+gulp.task('build', ['html', 'bundle', 'buildBundle', 'json', 'images', 'extras'], function() {
     
 });
 
