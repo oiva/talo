@@ -6,6 +6,7 @@ var React = require('react'),
 
     actions = require('../actions/actions'),
     housesStore = require('../stores/housesStore'),
+    markdown = require('markdown').markdown,
 
     CarouselView = require('../components/carousel'),
     FilesView = require('../components/files'),
@@ -40,6 +41,8 @@ var HouseView = React.createClass({
     var name = this.state.house.name;
     var slogan = this.state.house.slogan;
     //var address = this.state.house.address;
+    var contact = markdown.toHTML(this.state.house.contact);
+    var description = markdown.toHTML(this.state.house.description);
     var tables = '';
     var topics = '';
 
@@ -66,6 +69,12 @@ var HouseView = React.createClass({
           </header>
         </div>
 
+        <div className="row description">
+          <div className="col-md-12">
+            <div dangerouslySetInnerHTML={{__html: description}} />
+          </div>
+        </div>
+
         <CarouselView photos={this.state.house.photos} />
 
         {tables}
@@ -75,6 +84,12 @@ var HouseView = React.createClass({
         <MapView map={this.state.house.map} />
 
         <FilesView files={this.state.house.files} />
+
+        <div className="row contact">
+          <div className="col-md-12">
+            <div dangerouslySetInnerHTML={{__html: contact}} />
+          </div>
+        </div>
       </div>
     )
   }

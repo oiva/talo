@@ -136,6 +136,25 @@ th, td {
     width: auto;
 }
 
+.description {
+    margin: 2em 0 0;
+}
+
+.description ul {
+    padding-left: 30px;
+    text-indent: 2px;
+    list-style: none;
+    list-style-position: outside;
+}
+
+.description li {
+    &:before {
+        content: '✔';
+        margin-left: -30px;
+        margin-right: 10px;
+    }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
