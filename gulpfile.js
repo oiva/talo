@@ -173,9 +173,15 @@ gulp.task('json', function() {
 });
 
 // Robots.txt and favicon.ico
-gulp.task('extras', function () {
+gulp.task('extras', function() {
     return gulp.src(['app/*.txt', 'app/*.ico', 'app/*.png'])
         .pipe(gulp.dest('dist/'))
+        .pipe($.size());
+});
+
+gulp.task('files', function() {
+    return gulp.src(['app/files/*.pdf'])
+        .pipe(gulp.dest('dist/files'))
         .pipe($.size());
 });
 
@@ -206,7 +212,7 @@ gulp.task('watch', ['html', 'bundle', 'json'], function () {
 });
 
 // Build
-gulp.task('build', ['html', 'bundle', 'buildBundle', 'json', 'images', 'extras'], function() {
+gulp.task('build', ['html', 'bundle', 'buildBundle', 'json', 'images', 'extras', 'files'], function() {
     
 });
 

@@ -6,7 +6,16 @@
       "slogan": "Leppoisaa rivitaloasumista Sunassa!",
       "address": "Hösmärinkuja 1 J, 02760 Espoo",
       "neighborhood": "Suna",
-      "description": "Oletko aina haaveillut asuvasi Espoon Sunassa? Ehkä et, mutta pitäisit siitä luultavasti silti. Suna tarjoaa vähän kaikkea: keskimääräisen Espoon nukkumalähiön rauhallisuuden, Espoon keskuksen palvelut, ja rivakat liikenneyhteydet muualle. Selloon hurauttaa autolla vartissa. Lähin bussipysäkki on 200m päässä.\n\nNyt voit päästä osaksi Espoolaista unelmaa ja ostaa rivitalon päätyasunnon omaperäisesti nimetyn [Hösmärinkujan](http://www.espoo.fi/fi-FI/Asuminen_ja_ymparisto/Kaavoitus/Nimisto/Viikon_nimi_332013_Hosmari__Hosmar(36903)) varrelta.\n\n- Kolme huonetta ja keittiö\n- Sauna\n- Etupiha JA terassi\n- Ulkovarasto",
+      "description": "Oletko aina haaveillut asuvasi Espoon Sunassa? Ehkä et, mutta pitäisit siitä luultavasti silti. Suna tarjoaa vähän kaikkea: keskimääräisen Espoon nukkumalähiön rauhallisuuden, Espoon keskuksen palvelut, ja rivakat liikenneyhteydet muualle. Selloon hurauttaa autolla vartissa. Lähin bussipysäkki on 200m päässä.\n\nNyt voit päästä osaksi Espoolaista unelmaa ja ostaa rivitalon päätyasunnon omaperäisesti nimetyn [Hösmärinkujan](http://www.espoo.fi/fi-FI/Asuminen_ja_ymparisto/Kaavoitus/Nimisto/Viikon_nimi_332013_Hosmari__Hosmar(36903)) varrelta.\n\n- Kolme huonetta ja keittiö\n- Sauna\n- kylpyhuone JA erillinen vessa!\n- Etupiha JA terassi!\n- Ulkovarasto",
+      "meta": {
+        "og:title": "Rivitalo 3h+k Sunasta",
+        "og:site_name": "Hösmärinkuja 1 J",
+        "og:url": "http://hösmärinkuja1.fi",
+        "og:description": "Nyt on mukava rivitalon päätykämppä myynnissä Espoon Sunassa. Pinta-alaa on 77,5m². Kolme huonetta, keittiö, sauna, ulkovarasto, kaksi vessaa... mitä muuta vielä tarvitset?",
+        "og:image": "/images/fabo.jpg",
+        "og:locale": "fi_FI",
+        "article:author": "https://www.facebook.com/oiva.eskola"
+      },
       "contact": "## Ota yhteyttä ja sovi näyttö\n\nKiinnostaako? Ota rohkeasti yhteyttä ja sovitaan milloin voisit tulla katsomaan asuntoa.\n\n- Soita: Oiva Eskola [040 773 9493](tel:+358407739493)\n- Sähköposti: [oiva.eskola@gmail.com](mailto:oiva.eskola@gmail.com)",
       "topics": [
         {
@@ -19,6 +28,9 @@
         }
       ],
       "photos": [
+        "IMG_1004.jpg",
+        "pohja1.png",
+        "pohja2.png",
         "P1011172.jpg",
         "P1011176.jpg",
         "P1011179.jpg",
@@ -28,9 +40,7 @@
         "P1011194.jpg",
         "P1011197.jpg",
         "P1011203.jpg",
-        "P1011205.jpg",
-        "pohja1.png",
-        "pohja2.png"
+        "P1011205.jpg"
       ],
       "tables": [
         {
@@ -53,9 +63,9 @@
         {
           "title": "Hintatiedot ja muut kustannukset",
           "data": {
-            "Velaton myyntihinta": "€",
-            "Myyntihinta": "€",
-            "Neliöhinta": "/ m²",
+            "Velaton myyntihinta": "233 786,90 €",
+            "Myyntihinta": "242 000,00 €",
+            "Neliöhinta": "3122,60 € / m²",
             "Hoitovastike": "255,75 / kk",
             "Rahoitusvastike": "73,33€ / kk",
             "Yhtiövastike yhteensä": "329,08€ / kk",
@@ -109,7 +119,8 @@
       ],
       "files": {
         "Pohjapiirros": "/images/carousel/pohja.png",
-        "PTS remonttisuunnitelma 2014-2019": "/files/As.Oy Hösmärinmäki - PTS 2014.pdf"
+        "PTS remonttisuunnitelma 2014-2019": "/files/as-oy-hosmarinmaki-pts-2014.pdf",
+        "Ikkunaremontin rahoitusvastike": "2014-06-30-hosmarinmaki-ikkunaremontti-lasku"
       },
       "map": {
         "lat": 60.19788,
