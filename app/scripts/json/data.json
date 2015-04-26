@@ -6,7 +6,7 @@
       "slogan": "Leppoisaa rivitaloasumista Sunassa!",
       "address": "Hösmärinkuja 1 J, 02760 Espoo",
       "neighborhood": "Suna",
-      "description": "Oletko aina haaveillut asuvasi Espoon Sunassa? Ehkä et, mutta pitäisit siitä luultavasti silti. Suna tarjoaa vähän kaikkea: keskimääräisen Espoon nukkumalähiön rauhallisuuden, Espoon keskuksen palvelut, ja rivakat liikenneyhteydet muualle. Selloon hurauttaa autolla vartissa. Lähin bussipysäkki on 200m päässä.\n\nNyt voit päästä osaksi Espoolaista unelmaa ja ostaa rivitalon päätyasunnon omaperäisesti nimetyn [Hösmärinkujan](http://www.espoo.fi/fi-FI/Asuminen_ja_ymparisto/Kaavoitus/Nimisto/Viikon_nimi_332013_Hosmari__Hosmar(36903)) varrelta.\n\n- Kolme huonetta ja keittiö\n- Sauna\n- Etupiha JA takapiha",
+      "description": "Oletko aina haaveillut asuvasi Espoon Sunassa? Ehkä et, mutta pitäisit siitä luultavasti silti. Suna tarjoaa vähän kaikkea: keskimääräisen Espoon nukkumalähiön rauhallisuuden, Espoon keskuksen palvelut, ja rivakat liikenneyhteydet muualle. Selloon hurauttaa autolla vartissa. Lähin bussipysäkki on 200m päässä.\n\nNyt voit päästä osaksi Espoolaista unelmaa ja ostaa rivitalon päätyasunnon omaperäisesti nimetyn [Hösmärinkujan](http://www.espoo.fi/fi-FI/Asuminen_ja_ymparisto/Kaavoitus/Nimisto/Viikon_nimi_332013_Hosmari__Hosmar(36903)) varrelta.\n\n- Kolme huonetta ja keittiö\n- Sauna\n- Etupiha JA terassi\n- Ulkovarasto",
       "contact": "## Ota yhteyttä ja sovi näyttö\n\nKiinnostaako? Ota rohkeasti yhteyttä ja sovitaan milloin voisit tulla katsomaan asuntoa.\n\n- Soita: Oiva Eskola [040 773 9493](tel:+358407739493)\n- Sähköposti: [oiva.eskola@gmail.com](mailto:oiva.eskola@gmail.com)",
       "topics": [
         {
@@ -56,20 +56,37 @@
             "Velaton myyntihinta": "€",
             "Myyntihinta": "€",
             "Neliöhinta": "/ m²",
-            "Hoitovastike": "/ kk",
-            "Rahoitusvastike": "/ kk",
-            "Yhtiövastike yhteensä": "/ kk",
-            "Vesimaksu": "",
+            "Hoitovastike": "255,75 / kk",
+            "Rahoitusvastike": "73,33€ / kk",
+            "Yhtiövastike yhteensä": "329,08€ / kk",
+            "Vesimaksu": "kulutuksen mukaan, kahdelta hengeltä n. 33€ / kk",
             "Tolppapaikka": "40€ / vuosi"
           }
         },
         {
           "title": "Tehdyt remontit",
-          "data": {}
+          "data": [
+            {"year": "2014", "text": "Ikkunoiden ja ovien uusiminen"},
+            {"year": "2012", "text": "Patteritermostaattien vaihto"},
+            {"year": "2011", "text": "Patteriverkon puhdistus"},
+            {"year": "2011", "text": "Postilaatikoiden uusiminen"},
+            {"year": "2011", "text": "Terassin rakentaminen"},
+            {"year": "2010", "text": "Antennivahvistin uusittu"},
+            {"year": "2010", "text": "Etupihan katteet uusittu"},
+            {"year": "2009", "text": "Kylpyhuone ja sauna uusittu"},
+            {"year": "2006", "text": "Keittiön vesivaurion korjaus"},
+            {"year": "2006", "text": "Poistopuhallin ja kondensaattori uusittu"},
+            {"year": "2006", "text": "Piha asvaltoitu"}
+          ]
         },
         {
           "title": "Tulevat remontit",
-          "data": {}
+          "data": [
+            {"year": "2016-2018", "text": "Kattojen maalaus + huoltosiltojen uusiminen"},
+            {"year": "2017-2020", "text": "Yläpohjan lämmöneristyksen lisäeristys"},
+            {"year": "-", "text": "Puuverhoilun maalaaminen / uusiminen tarvittaessa"},
+            {"year": "-", "text": "Istutusten ja nurmialueiden hoito talkootöinä"}
+          ]
         },
         {
           "title": "Talon ja tontin tiedot",
@@ -91,7 +108,8 @@
         }
       ],
       "files": {
-        "Pohjapiirros": "/images/carousel/pohja.png"
+        "Pohjapiirros": "/images/carousel/pohja.png",
+        "PTS remonttisuunnitelma 2014-2019": "/files/As.Oy Hösmärinmäki - PTS 2014.pdf"
       },
       "map": {
         "lat": 60.19788,
