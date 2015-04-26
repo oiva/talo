@@ -23,8 +23,12 @@ var HouseView = React.createClass({
 
   getInitialState: function() {
     actions.search(+this.props.id || 1);
+    var house = {};
+    if (typeof window.preload !== 'undefined' && typeof window.preload[this.props.id] !== 'undefined') {
+      house = window.preload[this.props.id];
+    }
     return {
-      house: housesStore.getDefaultData()
+      house: house
     };
   },
 
@@ -38,9 +42,21 @@ var HouseView = React.createClass({
   renderMeta: function() {
     var meta = '';
     _.each(this.state.house.meta, function(value, key) {
-      meta += '<meta property="'+key+'" content="'+value+'" />';
+      meta += '<meta property="'+key+'" content="'+value+'" />\n';
     });
     $('head').append($.parseHTML(meta));
+
+    // preload data for next time
+    var json = JSON.stringify(this.state.house);
+    json = json.replace(/\\n/g, "\\n")
+      .replace(/\\'/g, "\\'")
+      .replace(/\\"/g, '\\"')
+      .replace(/\\&/g, "\\&")
+      .replace(/\\r/g, "\\r")
+      .replace(/\\t/g, "\\t")
+      .replace(/\\b/g, "\\b")
+      .replace(/\\f/g, "\\f");
+    $('body').append("<script>var preload = {"+this.state.house.id+": "+json+"};</script>");
   },
 
   render: function() {
