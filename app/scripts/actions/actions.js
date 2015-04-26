@@ -10,10 +10,6 @@ var Actions = Reflux.createActions({
 });
 
 function getHouseItem(houseId, context) {
-  if (typeof window.preload !== 'undefined' && typeof window.preload[houseId] !== 'undefined') {
-    var data = preload[houseId];
-    return context.completed(data);
-  }
   $.ajax({
     url: 'scripts/json/data.json'
   })
