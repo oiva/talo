@@ -180,7 +180,7 @@ gulp.task('extras', function() {
 });
 
 gulp.task('files', function() {
-    return gulp.src(['app/files/*.pdf'])
+    return gulp.src(['app/files/*.*'])
         .pipe(gulp.dest('dist/files'))
         .pipe($.size());
 });
