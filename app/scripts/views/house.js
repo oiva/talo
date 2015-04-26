@@ -3,6 +3,7 @@
 var React = require('react'),
     Reflux = require('reflux'),
     _ = require('lodash'),
+    $ = jQuery,
 
     actions = require('../actions/actions'),
     housesStore = require('../stores/housesStore'),
@@ -31,6 +32,15 @@ var HouseView = React.createClass({
     this.setState({
       house: house
     });
+    this.renderMeta();
+  },
+
+  renderMeta: function() {
+    var meta = '';
+    _.each(this.state.house.meta, function(value, key) {
+      meta += '<meta property="'+key+'" content="'+value+'" />';
+    });
+    $('head').append($.parseHTML(meta));
   },
 
   render: function() {

@@ -38,7 +38,7 @@ var CarouselView = React.createClass({
     return (
       <div className="carousel row">
         <div className="col-md-12">
-          <h2>Katso kuvat</h2>
+          <h2>Katso kuvat!</h2>
           <SimpleSlider photos={this.props.photos} />
         </div>
       </div>
