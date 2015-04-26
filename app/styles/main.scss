@@ -1,9 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 $slick-font-path: "/bower_components/slick-carousel/slick/fonts/";
+$slick-arrow-color: RGBA(195, 214, 225, 1);
+$slick-opacity-default: 0.9;
 
 /* colors */
 $blue: #375260;
-$blueLight: #e8f2f7;
+$blueLight: #fff;
+$darker: RGBA(214, 214, 214, 0.4);
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "slick-carousel/slick/slick";
@@ -74,7 +77,7 @@ th, td {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    background-color: RGBA(195, 214, 225, 0.4);
+    background-color: $darker;
     border-bottom: 0;
     border-radius: 0;
     border-top: 1px solid #f2f2f2;
@@ -105,7 +108,7 @@ th, td {
 }
 
 .map-container {
-    background: rgba($blue, .1);
+    background-color: $darker;
     border-radius: 1px;
     margin-top: 20px;
     padding-bottom: 20px;
