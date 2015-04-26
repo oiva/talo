@@ -120,7 +120,8 @@
       "files": {
         "Pohjapiirros": "/images/carousel/pohja.png",
         "PTS remonttisuunnitelma 2014-2019": "/files/as-oy-hosmarinmaki-pts-2014.pdf",
-        "Ikkunaremontin rahoitusvastike": "2014-06-30-hosmarinmaki-ikkunaremontti-lasku.pdf"
+        "Ikkunaremontin rahoitusvastike": "/files/2014-06-30-hosmarinmaki-ikkunaremontti-lasku.pdf",
+        "Rakennuspiirrusuts [tif]": "/files/rakennuspiirrustus.tif"
       },
       "map": {
         "lat": 60.19788,
