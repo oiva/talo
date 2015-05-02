@@ -186,6 +186,9 @@ th, td {
     .carousel-link {
         min-height: 100vw;
     }
+    .slick-dots {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 365px) {
