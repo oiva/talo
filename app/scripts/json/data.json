@@ -16,7 +16,14 @@
         "og:locale": "fi_FI",
         "article:author": "https://www.facebook.com/oiva.eskola"
       },
-      "contact": "## Ota yhteyttä ja sovi näyttö\n\nKiinnostaako? Ota rohkeasti yhteyttä ja sovitaan milloin voisit tulla katsomaan asuntoa.\n\n- Soita: Oiva Eskola [040 773 9493](tel:+358407739493)\n- Sähköposti: [oiva.eskola@gmail.com](mailto:oiva.eskola@gmail.com)",
+      "contact": {
+        "title": "Ota yhteyttä ja sovi näyttö",
+        "text": "Kiinnostaako? Ota rohkeasti yhteyttä ja sovitaan milloin voisit tulla katsomaan asuntoa.",
+        "methods": {
+          "call": ["Oiva Eskola", "040 773 9493", "tel:+358407739493"],
+          "email": ["oiva.eskola@gmail.com", "mailto:oiva.eskola@gmail.com"]
+        }
+      },
       "topics": [
         {
           "title": "Internet",
