@@ -159,7 +159,7 @@ var MapControls = React.createClass({
     }.bind(this));
 
     return (
-      <div className="row">
+      <div className="row map-view">
         <div className="col-md-12 col-sm-12 map-container">
           <h2>Talo kartalla</h2>
           <MapView map={this.props.map} ref='map' />

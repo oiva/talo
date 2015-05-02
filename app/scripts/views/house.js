@@ -60,6 +60,16 @@ var HouseView = React.createClass({
     $('body').append("<script>var preload = {"+this.state.house.id+": "+json+"};</script>");
   },
 
+  componentDidMount: function() {
+    // force reflow
+    $(this.getDOMNode()).css('transform', 'translateZ(0)');
+  },
+
+  componentDidUpdate: function() {
+    // force reflow
+    $(this.getDOMNode()).css('transform', 'translateZ(0)');
+  },
+
   render: function() {
     if (typeof this.state.house.name === 'undefined') {
       return <div></div>;
