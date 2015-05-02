@@ -11,7 +11,6 @@ var MapView = React.createClass({
 
   createMap: function(element) {
     this.houseIcon = new L.Icon({
-      
         shadowUrl: 'images/leaflet/house-shadow.png',
         iconUrl: 'images/leaflet/house-2x.png',
         iconSize:     [25, 40],
@@ -21,30 +20,25 @@ var MapView = React.createClass({
         popupAnchor:  [0, 0]
     });
 
-    this.map = L.map(element);
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(this.map);
-      L.marker([this.props.map.lat, this.props.map.lon], {icon: this.houseIcon}).addTo(this.map);
+    this.map = L.map(element, {
+      center: [this.props.map.lat, this.props.map.lon],
+      zoom: this.props.map.zoom
+    });
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(this.map);
+    L.marker([this.props.map.lat, this.props.map.lon], {icon: this.houseIcon}).addTo(this.map);
     return this.map;
   },
 
   componentDidMount: function() {
     L.Icon.Default.imagePath = 'images/leaflet';
     this.createMap(this.getDOMNode());
-    this.setupMap();
     this.prepareLayers();
   },
   
   componentWillUnmount: function() {
     this.map = null;
-  },
-
-  setupMap: function () {
-    if (typeof this.props.map === 'undefined') {
-      return;
-    }
-    this.map.setView([this.props.map.lat, this.props.map.lon], this.props.map.zoom);
   },
 
   showLayer: function(serviceType) {
