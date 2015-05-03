@@ -17,6 +17,7 @@ var React = require('react'),
     TopicView = require('../components/topic');
 
 var HouseView = React.createClass({
+  scrollTimeout: null,
 
   mixins: [
     Reflux.listenTo(housesStore, 'onStoreUpdate')
@@ -58,16 +59,6 @@ var HouseView = React.createClass({
       .replace(/\\b/g, "\\b")
       .replace(/\\f/g, "\\f");
     $('body').append("<script>var preload = {"+this.state.house.id+": "+json+"};</script>");
-  },
-
-  componentDidMount: function() {
-    // force reflow
-    $(this.getDOMNode()).css('transform', 'translateZ(0)');
-  },
-
-  componentDidUpdate: function() {
-    // force reflow
-    $(this.getDOMNode()).css('transform', 'translateZ(0)');
   },
 
   render: function() {

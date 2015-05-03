@@ -2,6 +2,7 @@
 
 var React = require('react'),
     _ = require('lodash'),
+    $ = jQuery,
     Slider = require('react-slick');
 
 var SimpleSlider = React.createClass({
@@ -34,6 +35,31 @@ var SimpleSlider = React.createClass({
 });
 
 var CarouselView = React.createClass({
+  scrollCallback: null,
+  previousOffset: 0,
+
+  componentDidMount: function() {
+    var top = $(this.getDOMNode()).offset().top;
+
+    this.scrollCallback = _.debounce(function() {
+      console.log('callback 2');
+      var offset = $(window).scrollTop();
+      if (offset < top + 500 && this.previousOffset > top + 525) {
+        // reflow when scrolling back up
+        console.log('reflow');
+        $(this.getDOMNode()).css('transform', 'translateZ(0)');
+        window.removeEventListener('scroll', this.scrollCallback);
+      }
+      this.previousOffset = offset;
+    }.bind(this), 250);
+
+    window.addEventListener('scroll', this.scrollCallback);
+  },
+
+  componentWillUnmount: function() {
+    window.removeEventListener('scroll', this.scrollCallback);
+  },
+
   render: function() {
     return (
       <div className="carousel row">

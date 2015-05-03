@@ -8,6 +8,7 @@ var React = require('react'),
 var MapView = React.createClass({
   layers: {},
   houseIcon: null,
+  scrollCallback: null,
 
   createMap: function(element) {
     this.houseIcon = new L.Icon({
@@ -20,10 +21,7 @@ var MapView = React.createClass({
         popupAnchor:  [0, 0]
     });
 
-    this.map = L.map(element, {
-      center: [this.props.map.lat, this.props.map.lon],
-      zoom: this.props.map.zoom
-    });
+    this.map = L.map(element);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
@@ -31,14 +29,34 @@ var MapView = React.createClass({
     return this.map;
   },
 
+  setView: function() {
+    this.map.setView([this.props.map.lat, this.props.map.lon], this.props.map.zoom);
+  },
+
   componentDidMount: function() {
     L.Icon.Default.imagePath = 'images/leaflet';
     this.createMap(this.getDOMNode());
     this.prepareLayers();
+    
+    /* setup trigger for loading map once it's in view. If `setView` is called
+     * when the map is out of screen, it will hide the `.row` elements after it.
+     */
+    var top = $(this.getDOMNode()).offset().top;
+    var windowHeight = $(window).height();
+    this.scrollCallback = _.debounce(function() {
+      console.log('callback');
+      if ($(window).scrollTop() > top - windowHeight / 2 + 1) {
+        this.setView();
+        window.removeEventListener('scroll', this.scrollCallback);
+      }
+    }.bind(this), 250);
+
+    window.addEventListener('scroll', this.scrollCallback);
   },
   
   componentWillUnmount: function() {
     this.map = null;
+    window.removeEventListener('scroll', this.scrollCallback);
   },
 
   showLayer: function(serviceType) {
