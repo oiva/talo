@@ -43,8 +43,51 @@ th, td {
     padding: 0 12px 4px 0;
 } 
 
-.house {
-    min-height: 4440px;
+.merry-go-round {
+    overflow: hidden;
+    position: relative;
+
+    &__slider {
+        position: relative;
+        width: 9999px;
+
+        &--moving {
+            transition: all 0.2s ease;
+        }
+    }
+    &__page {
+        position: absolute;
+        float: left;
+
+        img, a {
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-wrapper {
+    position: relative;
+
+    .carousel-button {
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        width: 25%;
+
+        &.prev {
+            left: 0;
+        }
+        &.next {
+            right: 0;
+        }
+    }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -86,7 +129,7 @@ th, td {
     border-radius: 0;
     border-top: 1px solid #f2f2f2;
     margin: 10px 15px;
-    padding: 30px 45px;
+    padding: 30px 40px;
     text-align: left;
 
     h1 {
@@ -129,20 +172,6 @@ th, td {
     width: 100%;
 }
 
-.carousel-link {
-    display: block;
-    min-height: 525px;
-}
-
-.carousel-image {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    max-height: 525px;
-    max-width: 700px;
-    width: auto;
-}
-
 .description {
     margin: 2em 0 0;
 }
@@ -183,16 +212,6 @@ th, td {
 }
 
 @media screen and (max-width: 700px) {
-    .carousel-image {
-        max-height: 100vw;
-        max-width: 100%;
-    }
-    .carousel-link {
-        min-height: 100vw;
-    }
-    .slick-dots {
-        display: none !important;
-    }
 }
 
 @media screen and (max-width: 365px) {
