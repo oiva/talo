@@ -44,7 +44,6 @@ var MapView = React.createClass({
     var top = $(this.getDOMNode()).offset().top;
     var windowHeight = $(window).height();
     this.scrollCallback = _.debounce(function() {
-      console.log('callback');
       if ($(window).scrollTop() > top - windowHeight / 2 + 1) {
         this.setView();
         window.removeEventListener('scroll', this.scrollCallback);
