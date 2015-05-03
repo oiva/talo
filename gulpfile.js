@@ -33,7 +33,7 @@ var reload = browserSync.reload;
 gulp.task('styles', function () {
     return gulp.src(['app/styles/main.scss', 'app/styles/**/*.css'])
         .pipe($.rubySass({
-            style: 'expanded',
+            style: 'compressed',
             precision: 10,
             loadPath: ['app/bower_components']}))
         .pipe($.autoprefixer('last 1 version'))
