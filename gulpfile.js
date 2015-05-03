@@ -17,6 +17,7 @@ var source = require('vinyl-source-stream'),
     cache = require('gulp-cached'),
     babel = require('gulp-babel'),
     babelify = require('babelify'),
+    sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     stripDebug = require('gulp-strip-debug'),
     
@@ -54,10 +55,10 @@ function compile(watch) {
           .on('error', function(err) { console.error(err); this.emit('end'); })
           .pipe(source(destFileName))
           .pipe(buffer())
-          //.pipe(uglify())
-          //.pipe(stripDebug())
-          //.pipe(sourcemaps.init({ loadMaps: true }))
-          //.pipe(sourcemaps.write('./'))
+          .pipe(uglify())
+          .pipe(stripDebug())
+          .pipe(sourcemaps.init({ loadMaps: true }))
+          .pipe(sourcemaps.write(destFolder))
           .pipe(gulp.dest(destFolder));
     }
  
