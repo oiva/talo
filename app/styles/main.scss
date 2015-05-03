@@ -1,7 +1,4 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
-$slick-font-path: "/bower_components/slick-carousel/slick/fonts/";
-$slick-arrow-color: RGBA(195, 214, 225, 1);
-$slick-opacity-default: 0.9;
 
 /* colors */
 $blue: #375260;
@@ -9,8 +6,6 @@ $blueLight: #fff;
 $darker: RGBA(214, 214, 214, 0.4);
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "slick-carousel/slick/slick";
-@import "slick-carousel/slick/slick-theme";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -79,13 +74,40 @@ th, td {
         bottom: 0;
         position: absolute;
         top: 0;
-        width: 25%;
+        width: 18%;
 
         &.prev {
             left: 0;
         }
         &.next {
             right: 0;
+        }
+        &:hover {
+            //background-color: rgba(0, 0, 40, 0.1);
+        }
+        &:hover:before {
+            color: rgba(235, 235, 235, 1);
+        }
+        &:before {
+            color: rgba(235, 235, 235, 0.4);
+            display: block;
+            font-family: 'Patua One';
+            font-size: 80px;
+            height: 44px;
+            line-height: 30px;
+            margin-top: -20px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 44px;
+        }
+        &.next:before {
+            content: "›";
+            right: 10px;
+        }
+        &.prev:before {
+            content: "‹";
+            left: 10px;
         }
     }
 }

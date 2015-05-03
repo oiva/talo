@@ -66,7 +66,7 @@ var CarouselView = React.createClass({
 
     var width = Math.min(this.state.screenWidth, MAX_WIDTH);
     var pageWidth = width;
-    width -= 2*MARGIN;
+    //width -= 2*MARGIN;
     var height = Math.ceil(pageWidth / 4 * 3);
 
     return (
