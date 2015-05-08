@@ -31,7 +31,7 @@
         },
         {
           "title": "Miten löydät perille",
-          "text": "**Autolla** Espoonväylän / Finnoontien suunnasta: käänny Hösmärintielle (kyltissä lukee Suvela ja Suna). Aja Hösmärintien päähän ja käänny oikealle niin monta kertaa, että päädyt Hösmärinkujalle. Hösmärinkuja 1 on ensimmäisenä oikealla. Pihassa on tien puoleisessa päädyssä kaksi vieraspaikkaa. Voit myös jättää autosi Hösmärintielle (24h parkki) ja oikaista pihan poikki.\n\n**Bussilla**: bussilla 156 pääsee lähimmäksi kun jää pois Saarnimäenkujan pysäkillä."
+          "text": "**Autolla** Espoonväylän / Finnoontien suunnasta: käänny Hösmärintielle (kyltissä lukee Suvela ja Suna). Aja Hösmärintien päähän ja käänny oikealle niin monta kertaa, että päädyt Hösmärinkujalle. Hösmärinkuja 1 on ensimmäisenä oikealla. Pihassa on tien puoleisessa päädyssä kaksi vieraspaikkaa. Voit myös jättää autosi Hösmärintielle (24h parkki) ja oikaista polkua pitkin.\n\n**Bussilla**: bussilla 156 pääsee lähimmäksi kun jää pois Saarnimäenkujan pysäkillä."
         }
       ],
       "photos": [
@@ -78,13 +78,13 @@
         {
           "title": "Hintatiedot ja muut kustannukset",
           "data": {
-            "Velaton myyntihinta": "236 786,90€",
-            "Myyntihinta": "245 000,00€",
-            "Neliöhinta": "3161,30€ / m²",
+            "Velaton myyntihinta": "236 940,23€",
+            "Myyntihinta": "244 000,00€",
+            "Neliöhinta": "3148,40€ / m²",
             "Hoitovastike": "255,75€ / kk",
             "Rahoitusvastike": "73,33€ / kk",
             "Yhtiövastike yhteensä": "329,08€ / kk",
-            "Vesimaksu": "kulutuksen mukaan, kahdelta hengeltä n. 33€ / kk",
+            "Vesimaksu": "kulutuksen mukaan, kahdelta hengeltä n. 30€ / kk",
             "Sähkö": "sähköä tulee pistorasiasta ja se maksaa rahaa",
             "Tolppapaikka": "40€ / vuosi"
           }
@@ -97,6 +97,7 @@
             {"year": "2011", "text": "Patteriverkon puhdistus"},
             {"year": "2011", "text": "Postilaatikoiden uusiminen"},
             {"year": "2011", "text": "Terassin rakentaminen"},
+            {"year": "2010", "text": "valokatteet, ulkovarastojen kourut ja syöksytorvet uusittu"},
             {"year": "2010", "text": "Antennivahvistin uusittu"},
             {"year": "2010", "text": "Etupihan katteet uusittu"},
             {"year": "2009", "text": "Kylpyhuone ja sauna uusittu"},
