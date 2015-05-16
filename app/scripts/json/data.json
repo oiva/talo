@@ -144,7 +144,8 @@
         "Energiatodistus": "/files/2009-06-01-hosmarinmaki-energiatodistus.pdf",
         "Rasitustodistus": "/files/rasitustodistus.pdf",
         "Lainhuutotodistus": "/files/lainhuutotodistus.pdf",
-        "Asemakaava (Espoon kaupungin karttapalvelu)": "http://kartat.espoo.fi/IMS/?layers=Asemakaavat&lon=Ajantasa-asemakaava%2C%20v%C3%A4rillinen&cp=6676164,25481888&z=0.5"
+        "Asemakaava (Espoon kaupungin karttapalvelu)": "http://kartat.espoo.fi/IMS/?layers=Asemakaavat&lon=Ajantasa-asemakaava%2C%20v%C3%A4rillinen&cp=6676164,25481888&z=0.5",
+        "Ostotarjous": "/files/ostotarjous_huoneisto.pdf"
       },
       "map": {
         "lat": 60.19788,
