@@ -58,7 +58,8 @@ var HouseView = React.createClass({
       .replace(/\\t/g, "\\t")
       .replace(/\\b/g, "\\b")
       .replace(/\\f/g, "\\f");
-    $('body').append("<script>var preload = {"+this.state.house.id+": "+json+"};</script>");
+    $('#preload').remove()
+    $('#app').after("<script id='preload'>var preload = {"+this.state.house.id+": "+json+"};</script>");
   },
 
   render: function() {
