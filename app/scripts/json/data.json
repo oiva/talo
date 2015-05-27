@@ -79,15 +79,16 @@
         {
           "title": "Hintatiedot ja muut kustannukset",
           "data": {
-            "Velaton myyntihinta": "236 940,23€",
-            "Myyntihinta": "244 000,00€",
-            "Neliöhinta": "3148,40€ / m²",
+            "Velaton myyntihinta": "237 000,00€",
+            "Myyntihinta": "229 940,23€",
+            "Velkaosuus": "7059,77€",
+            "Neliöhinta": "3058,06€ / m²",
             "Hoitovastike": "255,75€ / kk",
             "Rahoitusvastike": "73,33€ / kk",
             "Yhtiövastike yhteensä": "329,08€ / kk",
-            "Vesimaksu": "kulutuksen mukaan, kahdelta hengeltä n. 30€ / kk",
-            "Sähkö": "sähköä tulee pistorasiasta ja se maksaa rahaa",
-            "Tolppapaikka": "40€ / vuosi"
+            "Vesimaksu": "13€ / hlö / kk. Tasaus kulutuksen mukaan vuosittain",
+            "Tolppapaikka autolle": "40€ / vuosi",
+            "Sähkö": "sähköä tulee pistorasiasta ja se maksaa rahaa"
           }
         },
         {
